@@ -14,7 +14,7 @@ public class Main {
         double lemonPrice = pricePerWeight(lemon.getWeight(), lemon.getPricePerKg());
 
         double checkAmount = greenApplePrice + redApplePrice + bananaPrice + lemonPrice;
-        System.out.printf("РЎСѓРјРјР° РїРѕ С‡РµРєСѓ: %.2f", checkAmount); // 7.59 РіСЂРЅ
+        System.out.printf("Check Amount: %.2f", checkAmount);
 
     }
 

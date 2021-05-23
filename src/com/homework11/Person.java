@@ -1,20 +1,20 @@
 package com.homework11;
 
 public class Person {
-    private String name;
-    private String surname;
+    private final String NAME;
+    private final String SURNAME;
     private int year;
     private int weightKg;
     private int heightCm;
 
     public Person(String name, String surname) {
-        this.name = name;
-        this.surname = surname;
+        this.NAME = name;
+        this.SURNAME = surname;
     }
 
     public Person(String name, String surname, int year, int weight, int height) {
-        this.name = name;
-        this.surname = surname;
+        this.NAME = name;
+        this.SURNAME = surname;
         this.year = year;
         this.weightKg = weight;
         this.heightCm = height;
@@ -23,8 +23,8 @@ public class Person {
     @Override
     public String toString() {
         return "Person{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
+                "name='" + NAME + '\'' +
+                ", surname='" + SURNAME + '\'' +
                 ", year=" + year +
                 ", weightKg=" + weightKg +
                 ", heightCm=" + heightCm +

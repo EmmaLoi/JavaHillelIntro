@@ -8,9 +8,13 @@ public class HW8Task1 {
     public static void main(String[] args) {
         int numberCoincidences = 0;
 
-        for (int h = 0; h <= 24; h++) {
-            for (int m = 0; m <= 59; m++) {
-                if (h == m) {
+        for (int hours = 0; hours < 24; hours++) {
+            for (int minutes = 0; minutes <= 59; minutes++) {
+                int h1 = hours / 10;
+                int h2 = hours % 10;
+                int m1 = minutes / 10;
+                int m2 = minutes % 10;
+                if (h1 == m2 && h2 == m1) {
                     numberCoincidences++;
                 }
             }

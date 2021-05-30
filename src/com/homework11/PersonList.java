@@ -1,8 +1,6 @@
 package com.homework11;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class PersonList {
     private final Random RANDOM = new Random();
@@ -19,6 +17,11 @@ public class PersonList {
         for (int i = 1; i <= 100; i++) {
             persons.add(createRandomPerson());
         }
+    }
+
+    public List<Person> getUniquePerson() {
+        Set<Person> personSet = new HashSet<>(persons);
+        return new ArrayList<>(personSet);
     }
 
     private Person createRandomPerson() {

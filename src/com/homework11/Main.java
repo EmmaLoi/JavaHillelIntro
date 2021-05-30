@@ -8,5 +8,8 @@ public class Main {
         for (Person person : personList.getPersons()) {
             System.out.println(person.toString());
         }
+
+        System.out.println("Person list with unique name and surname:");
+        System.out.println(personList.getUniquePerson());
     }
 }
